@@ -4,3 +4,6 @@ node_modules
 *.lock
 .env
 .env.build
+.env
+.idea
+.DS_Store

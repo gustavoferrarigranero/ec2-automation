@@ -5,7 +5,7 @@ import Header from './header';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
-import Profile from '../routes/profile';
+import Instances from '../routes/instances';
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -22,8 +22,7 @@ export default class App extends Component {
         <Header />
         <Router onChange={this.handleRoute}>
           <Home path="/" />
-          <Profile path="/profile/" user="me" />
-          <Profile path="/profile/:user" />
+          <Instances path="/instances" />
         </Router>
       </div>
     );
