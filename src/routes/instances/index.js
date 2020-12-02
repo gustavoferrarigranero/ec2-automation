@@ -3,7 +3,7 @@ import awsSdk from 'aws-sdk';
 import style from './style.css';
 
 export default class Instances extends Component {
-    handleStop = async () => {
+    handleStop () {
         awsSdk.config.update({
             region: 'us-east-1',
             secretAccessKey: process.env.PREACT_APP_AWS_ACCESS_KEY_ID, // TODO buscar de algum lugar
